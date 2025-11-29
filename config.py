@@ -5,7 +5,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Recommended
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8120086484:AAH2CfBS6SBDwN0yTcuNejsDKRdZn9IxxsI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8120086484:AAEsjovfDcT8R9RNHj4gJedKgRaLRHrGaJ4")
 APP_ID = int(os.environ.get("APP_ID", "27693340"))
 API_HASH = os.environ.get("API_HASH", "1056193e68c138ee16edc02578c559e1")
 
@@ -27,8 +27,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "40"))
 #--- ---- ---- --- --- --- - -- -  - - - - - - - - - - - --  - -
 
 # Start pic
-START_PIC = ""
-START_IMG = ""
+START_PIC = "https://graph.org/file/014b2a90781c4d87cd685-4170c7ebc96fb3457d.jpg"
+START_IMG = "https://graph.org/file/da8a284db167b8c067bcd-e6f327f083e7b075b9.jpg"
 # Messages
 START_MSG = os.environ.get("START_MESSAGE", "<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʟɪɴᴋs sʜᴀʀɪɴɢ ʙᴏᴛ. ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ʟɪɴᴋs ᴀɴᴅ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟs sᴀғᴇ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\n<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href=''></a></blockquote></b>")
 HELP = os.environ.get("HELP_MESSAGE", "<b><blockquote expandable>» Creator: <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ 🜲</a>\n» Our Community: <a href=https://t.me/loading_cluster>ᴄʟᴜꜱᴛᴇʀ ʙᴏᴛꜱ</a>\n» Anime Channel: <a href=https://t.me/play_tamil_dubbed_series>ᴘʟᴀʏ ᴄᴏᴍᴍᴜɴɪᴛʏ</a>\n» Developer: <a href=https://t.me/Here_remo></a>Ꮢᴇᴍᴏ 🜲</b>")
