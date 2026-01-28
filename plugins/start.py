@@ -86,7 +86,7 @@ async def start_command(client: Bot, message: Message):
                     [[InlineKeyboardButton("• Proceed to Link •", url=original_link)]]
                 )
                 return await message.reply_text(
-                    "<b><blockquote expandable>ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ! ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ</b>",
+                    "<blockquote>https://graph.org/file/8f6cc424fd39cc1795a9a-b391b8231829437915.jpg</blockquote>\n\n<b>‎🎟️ 𝖨𝗇𝗏𝗂𝗍𝖾 𝗅𝗂𝗇𝗄 𝖿𝗈𝗋 𝖳𝗁𝗂𝗌 𝗅𝗂𝗇𝗄 𝗐𝗂𝗅𝗅 𝖾𝗑𝗉𝗂𝗋𝖾 𝗂𝗇 180 𝗌𝖾𝖼𝗈𝗇𝖽𝗌.</b>",
                     reply_markup=button,
                     parse_mode=ParseMode.HTML
                 )
@@ -132,7 +132,7 @@ async def start_command(client: Bot, message: Message):
                     is_request_link = is_request
                     await save_invite_link(channel_id, invite_link, is_request_link)
 
-            button_text = "• ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ •" if is_request_link else "• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •"
+            button_text = "Jᴏɪɴ Nᴏᴡ" if is_request_link else "Rᴇqᴜᴇꜱᴛ Nᴏᴡ "
             button = InlineKeyboardMarkup([[InlineKeyboardButton(button_text, url=invite_link)]])
 
             wait_msg = await message.reply_text(
@@ -143,13 +143,13 @@ async def start_command(client: Bot, message: Message):
             await wait_msg.delete()
             
             await message.reply_text(
-                "<b><blockquote expandable>ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ! ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ</b>",
+                "<blockquote>https://graph.org/file/8f6cc424fd39cc1795a9a-b391b8231829437915.jpg</blockquote>\n\n<b>‎🎟️ 𝖨𝗇𝗏𝗂𝗍𝖾 𝗅𝗂𝗇𝗄 𝖿𝗈𝗋 𝖳𝗁𝗂𝗌 𝗅𝗂𝗇𝗄 𝗐𝗂𝗅𝗅 𝖾𝗑𝗉𝗂𝗋𝖾 𝗂𝗇 180 𝗌𝖾𝖼𝗈𝗇𝖽𝗌.</b>",
                 reply_markup=button,
                 parse_mode=ParseMode.HTML
             )
 
             note_msg = await message.reply_text(
-                "<u><b>Note: If the link is expired, please click the post link again to get a new one.</b></u>",
+                "<blockquote expandable>Nᴏᴛᴇ:\n\nIғ ᴛʜᴇ ʟɪɴᴋ ᴇxᴘɪʀᴇs, Cʟɪᴄᴋ ᴛʜᴇ Rᴇʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴀ ɴᴇᴡ ʟɪɴᴋ.</blockquote>",
                 parse_mode=ParseMode.HTML
             )
 
