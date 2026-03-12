@@ -19,7 +19,7 @@ DB_NAME = os.environ.get("DB_NAME", "cluster0")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()] # dont change anything 
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @loading_cluster</b>")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>⚡ Yoo, {mention}\n\nYᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @loading_cluster</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Default
@@ -30,7 +30,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "40"))
 START_PIC = "https://graph.org/file/c22ccad28832aed94dbf1-49c96f1f7912938b86.jpg"
 START_IMG = "https://graph.org/file/a617481d19aa04ace0c7c-ab1b60b42572ba17ae.jpg"
 # Messages
-START_MSG = os.environ.get("START_MESSAGE", "<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʟɪɴᴋs sʜᴀʀɪɴɢ ʙᴏᴛ. ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ʟɪɴᴋs ᴀɴᴅ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟs sᴀғᴇ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\n<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/Here_remo'>Ꮢᴇᴍᴏ 🜲</a></blockquote></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>⚡ Hᴇʏ, {mention} ~ \n\n<blockquote expandable>Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʟɪɴᴋs sʜᴀʀɪɴɢ ʙᴏᴛ. ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ʟɪɴᴋs ᴀɴᴅ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟs sᴀғᴇ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.</blockquote>\n\n‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/Here_remo'>Ꮢᴇᴍᴏ 🜲</a></b>")
 HELP = os.environ.get("HELP_MESSAGE", "<b><blockquote expandable>» Creator: <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ 🜲</a>\n» Our Community: <a href=https://t.me/loading_cluster>ᴄʟᴜꜱᴛᴇʀ ʙᴏᴛꜱ</a>\n» Anime Channel: <a href=https://t.me/play_tamil_dubbed_series>ᴘʟᴀʏ ᴄᴏᴍᴍᴜɴɪᴛʏ</a>\n» Developer: <a href=https://t.me/Here_remo></a>Ꮢᴇᴍᴏ 🜲</b>")
 ABOUT = os.environ.get("ABOUT_MESSAGE", "<b><blockquote expandable>This bot is developed by Ꮢᴇᴍᴏ (@Here_remo) to securely share Telegram channel links with temporary invite links, protecting your channels from copyright issues.</b>")
 
